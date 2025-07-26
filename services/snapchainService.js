@@ -194,7 +194,7 @@ class SnapchainService {
       console.log(`User ${userFid} liked cast ${castHash}: ${hasLiked}`);
       return hasLiked;
     } catch (error) {
-      console.error('Error verifying cast like:', error);
+      console.error('Error verifying cast like and recast:', error);
       return false;
     }
   }
